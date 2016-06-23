@@ -102,7 +102,6 @@
 		A32FB2D21D1BE1AC00CC6563 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2A41D1BE1AC00CC6563 /* UIImageView+HighlightedWebCache.m */; };
 		A32FB2D31D1BE1AC00CC6563 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2A61D1BE1AC00CC6563 /* UIImageView+WebCache.m */; };
 		A32FB2D41D1BE1AC00CC6563 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2A81D1BE1AC00CC6563 /* UIView+WebCacheOperation.m */; };
-		A32FB2D51D1BE1AC00CC6563 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2AB1D1BE1AC00CC6563 /* SRWebSocket.m */; };
 		A32FB2D61D1BE1AC00CC6563 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2AE1D1BE1AC00CC6563 /* STCollapseTableView.m */; };
 		A32FB2DC1D1BE1AC00CC6563 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2BD1D1BE1AC00CC6563 /* UIView+Toast.m */; };
 		A32FB2DD1D1BE1AC00CC6563 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C01D1BE1AC00CC6563 /* UICKeyChainStore.m */; };
@@ -326,8 +325,6 @@
 		A32FB2A61D1BE1AC00CC6563 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A32FB2A71D1BE1AC00CC6563 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A32FB2A81D1BE1AC00CC6563 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		A32FB2AA1D1BE1AC00CC6563 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
-		A32FB2AB1D1BE1AC00CC6563 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		A32FB2AD1D1BE1AC00CC6563 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
 		A32FB2AE1D1BE1AC00CC6563 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
 		A32FB2BC1D1BE1AC00CC6563 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
@@ -433,7 +430,6 @@
 			children = (
 				A32FB2841D1BE1AC00CC6563 /* RFSegmentView */,
 				A32FB2871D1BE1AC00CC6563 /* SDWebImage */,
-				A32FB2A91D1BE1AC00CC6563 /* SocketRocket */,
 				A32FB2AC1D1BE1AC00CC6563 /* STCollapseTableView */,
 				A32FB2BB1D1BE1AC00CC6563 /* Toast */,
 				A32FB2BE1D1BE1AC00CC6563 /* UICKeyChainStore */,
@@ -815,15 +811,6 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		A32FB2A91D1BE1AC00CC6563 /* SocketRocket */ = {
-			isa = PBXGroup;
-			children = (
-				A32FB2AA1D1BE1AC00CC6563 /* SRWebSocket.h */,
-				A32FB2AB1D1BE1AC00CC6563 /* SRWebSocket.m */,
-			);
-			path = SocketRocket;
-			sourceTree = "<group>";
-		};
 		A32FB2AC1D1BE1AC00CC6563 /* STCollapseTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1012,7 +999,6 @@
 				A32FB26B1D1BE19200CC6563 /* MJPropertyType.m in Sources */,
 				A32FB26C1D1BE19200CC6563 /* NSObject+MJClass.m in Sources */,
 				A32FB2681D1BE19200CC6563 /* MJFoundation.m in Sources */,
-				A32FB2D51D1BE1AC00CC6563 /* SRWebSocket.m in Sources */,
 				A32FB23E1D1BE19200CC6563 /* AFHTTPRequestOperation.m in Sources */,
 				A32F1B891D1BD8BA0041312D /* ViewController.m in Sources */,
 				A32FB2421D1BE19200CC6563 /* AFNetworkReachabilityManager.m in Sources */,
