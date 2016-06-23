@@ -115,6 +115,11 @@
 		A32FB2DD1D1BE1AC00CC6563 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C01D1BE1AC00CC6563 /* UICKeyChainStore.m */; };
 		A32FB2DE1D1BE1AC00CC6563 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */; };
 		A32FB2E21D1BE1F500CC6563 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2E11D1BE1F500CC6563 /* KxMenu.m */; };
+		A32FB2EB1D1BE24800CC6563 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */; };
+		A32FB2EC1D1BE24800CC6563 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E71D1BE24800CC6563 /* left_arrow.png */; };
+		A32FB2ED1D1BE24800CC6563 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */; };
+		A32FB2EE1D1BE24800CC6563 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E91D1BE24800CC6563 /* right_arrow.png */; };
+		A32FB2EF1D1BE24800CC6563 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -360,6 +365,12 @@
 		A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		A32FB2E01D1BE1F500CC6563 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		A32FB2E11D1BE1F500CC6563 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		A32FB2E41D1BE24800CC6563 /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = "<group>"; };
+		A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = "<group>"; };
+		A32FB2E71D1BE24800CC6563 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_arrow@2x.png"; sourceTree = "<group>"; };
+		A32FB2E91D1BE24800CC6563 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +464,7 @@
 		A32FB18D1D1BE05D00CC6563 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A32FB2E31D1BE24800CC6563 /* Source */,
 				A32FB2841D1BE1AC00CC6563 /* RFSegmentView */,
 				A32FB2871D1BE1AC00CC6563 /* SDWebImage */,
 				A32FB2A91D1BE1AC00CC6563 /* SocketRocket */,
@@ -922,6 +934,27 @@
 			path = KxMenu;
 			sourceTree = "<group>";
 		};
+		A32FB2E31D1BE24800CC6563 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A32FB2E41D1BE24800CC6563 /* CKCalendarView.h */,
+				A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */,
+				A32FB2E61D1BE24800CC6563 /* resources */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A32FB2E61D1BE24800CC6563 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A32FB2E71D1BE24800CC6563 /* left_arrow.png */,
+				A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */,
+				A32FB2E91D1BE24800CC6563 /* right_arrow.png */,
+				A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1025,8 +1058,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32FB2ED1D1BE24800CC6563 /* left_arrow@2x.png in Resources */,
+				A32FB2EC1D1BE24800CC6563 /* left_arrow.png in Resources */,
+				A32FB2EE1D1BE24800CC6563 /* right_arrow.png in Resources */,
 				A32F1B911D1BD8BA0041312D /* LaunchScreen.storyboard in Resources */,
 				A32F1B8E1D1BD8BA0041312D /* Assets.xcassets in Resources */,
+				A32FB2EF1D1BE24800CC6563 /* right_arrow@2x.png in Resources */,
 				A32F1B8C1D1BD8BA0041312D /* Main.storyboard in Resources */,
 				A32FB27F1D1BE19200CC6563 /* MJRefresh.bundle in Resources */,
 				A32FB25B1D1BE19200CC6563 /* KVNProgressView.xib in Resources */,
@@ -1114,6 +1151,7 @@
 				A32FB2D41D1BE1AC00CC6563 /* UIView+WebCacheOperation.m in Sources */,
 				A32FB2731D1BE19200CC6563 /* MJRefreshComponent.m in Sources */,
 				A32FB2D01D1BE1AC00CC6563 /* UIImage+MultiFormat.m in Sources */,
+				A32FB2EB1D1BE24800CC6563 /* CKCalendarView.m in Sources */,
 				A32FB2D71D1BE1AC00CC6563 /* STPopupController.m in Sources */,
 				A32FB2DC1D1BE1AC00CC6563 /* UIView+Toast.m in Sources */,
 				A32FB2CE1D1BE1AC00CC6563 /* UIButton+WebCache.m in Sources */,
