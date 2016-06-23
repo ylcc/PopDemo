@@ -464,7 +464,7 @@
 		A32FB18D1D1BE05D00CC6563 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				A32FB2E31D1BE24800CC6563 /* Source */,
+				A32FB2E31D1BE24800CC6563 /* CKCalendarView */,
 				A32FB2841D1BE1AC00CC6563 /* RFSegmentView */,
 				A32FB2871D1BE1AC00CC6563 /* SDWebImage */,
 				A32FB2A91D1BE1AC00CC6563 /* SocketRocket */,
@@ -934,13 +934,14 @@
 			path = KxMenu;
 			sourceTree = "<group>";
 		};
-		A32FB2E31D1BE24800CC6563 /* Source */ = {
+		A32FB2E31D1BE24800CC6563 /* CKCalendarView */ = {
 			isa = PBXGroup;
 			children = (
 				A32FB2E41D1BE24800CC6563 /* CKCalendarView.h */,
 				A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */,
 				A32FB2E61D1BE24800CC6563 /* resources */,
 			);
+			name = CKCalendarView;
 			path = Source;
 			sourceTree = "<group>";
 		};
