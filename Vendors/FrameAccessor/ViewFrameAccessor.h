@@ -9,13 +9,13 @@
 
 #define IS_IOS_DEVICE (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
 
-#if IS_IOS_DEVICE
+//#if IS_IOS_DEVICE
     #import <UIKit/UIKit.h>
     #define View UIView
-#else
-    #import <Foundation/Foundation.h>
-    #define View NSView
-#endif
+//#else
+//    #import <Foundation/Foundation.h>
+//    #define View NSView
+//#endif
 
 
 @interface View (FrameAccessor)

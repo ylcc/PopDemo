@@ -6,7 +6,8 @@
  *  Copyright 2010 RED/SAFI. All rights reserved.
  *
  */
-
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //--------------------------------------------
 //      MARK:NSString 扩展

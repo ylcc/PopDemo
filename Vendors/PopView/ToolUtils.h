@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "Type_user.h"
 
 @interface ToolUtils : NSObject
 

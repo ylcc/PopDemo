@@ -34,8 +34,6 @@
 		A32FB24C1D1BE19200CC6563 /* NSString+EMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1B51D1BE19200CC6563 /* NSString+EMAdditions.m */; };
 		A32FB24D1D1BE19200CC6563 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1B81D1BE19200CC6563 /* FCUUID.m */; };
 		A32FB24E1D1BE19200CC6563 /* UIDevice+FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1BA1D1BE19200CC6563 /* UIDevice+FCUUID.m */; };
-		A32FB24F1D1BE19200CC6563 /* FDSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1BD1D1BE19200CC6563 /* FDSlideBar.m */; };
-		A32FB2501D1BE19200CC6563 /* FDSlideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1BF1D1BE19200CC6563 /* FDSlideBarItem.m */; };
 		A32FB2511D1BE19200CC6563 /* ScrollViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1C31D1BE19200CC6563 /* ScrollViewFrameAccessor.m */; };
 		A32FB2521D1BE19200CC6563 /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1C51D1BE19200CC6563 /* ViewFrameAccessor.m */; };
 		A32FB2531D1BE19200CC6563 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB1C81D1BE19200CC6563 /* pinyin.m */; };
@@ -106,20 +104,10 @@
 		A32FB2D41D1BE1AC00CC6563 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2A81D1BE1AC00CC6563 /* UIView+WebCacheOperation.m */; };
 		A32FB2D51D1BE1AC00CC6563 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2AB1D1BE1AC00CC6563 /* SRWebSocket.m */; };
 		A32FB2D61D1BE1AC00CC6563 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2AE1D1BE1AC00CC6563 /* STCollapseTableView.m */; };
-		A32FB2D71D1BE1AC00CC6563 /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2B21D1BE1AC00CC6563 /* STPopupController.m */; };
-		A32FB2D81D1BE1AC00CC6563 /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2B41D1BE1AC00CC6563 /* STPopupLeftBarItem.m */; };
-		A32FB2D91D1BE1AC00CC6563 /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2B61D1BE1AC00CC6563 /* STPopupNavigationBar.m */; };
-		A32FB2DA1D1BE1AC00CC6563 /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2B81D1BE1AC00CC6563 /* UIResponder+STPopup.m */; };
-		A32FB2DB1D1BE1AC00CC6563 /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2BA1D1BE1AC00CC6563 /* UIViewController+STPopup.m */; };
 		A32FB2DC1D1BE1AC00CC6563 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2BD1D1BE1AC00CC6563 /* UIView+Toast.m */; };
 		A32FB2DD1D1BE1AC00CC6563 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C01D1BE1AC00CC6563 /* UICKeyChainStore.m */; };
 		A32FB2DE1D1BE1AC00CC6563 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */; };
 		A32FB2E21D1BE1F500CC6563 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2E11D1BE1F500CC6563 /* KxMenu.m */; };
-		A32FB2EB1D1BE24800CC6563 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */; };
-		A32FB2EC1D1BE24800CC6563 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E71D1BE24800CC6563 /* left_arrow.png */; };
-		A32FB2ED1D1BE24800CC6563 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */; };
-		A32FB2EE1D1BE24800CC6563 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2E91D1BE24800CC6563 /* right_arrow.png */; };
-		A32FB2EF1D1BE24800CC6563 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,10 +183,6 @@
 		A32FB1B81D1BE19200CC6563 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
 		A32FB1B91D1BE19200CC6563 /* UIDevice+FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FCUUID.h"; sourceTree = "<group>"; };
 		A32FB1BA1D1BE19200CC6563 /* UIDevice+FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FCUUID.m"; sourceTree = "<group>"; };
-		A32FB1BC1D1BE19200CC6563 /* FDSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBar.h; sourceTree = "<group>"; };
-		A32FB1BD1D1BE19200CC6563 /* FDSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBar.m; sourceTree = "<group>"; };
-		A32FB1BE1D1BE19200CC6563 /* FDSlideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBarItem.h; sourceTree = "<group>"; };
-		A32FB1BF1D1BE19200CC6563 /* FDSlideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBarItem.m; sourceTree = "<group>"; };
 		A32FB1C11D1BE19200CC6563 /* FrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameAccessor.h; sourceTree = "<group>"; };
 		A32FB1C21D1BE19200CC6563 /* ScrollViewFrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewFrameAccessor.h; sourceTree = "<group>"; };
 		A32FB1C31D1BE19200CC6563 /* ScrollViewFrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewFrameAccessor.m; sourceTree = "<group>"; };
@@ -346,17 +330,6 @@
 		A32FB2AB1D1BE1AC00CC6563 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		A32FB2AD1D1BE1AC00CC6563 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
 		A32FB2AE1D1BE1AC00CC6563 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
-		A32FB2B01D1BE1AC00CC6563 /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
-		A32FB2B11D1BE1AC00CC6563 /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
-		A32FB2B21D1BE1AC00CC6563 /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
-		A32FB2B31D1BE1AC00CC6563 /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
-		A32FB2B41D1BE1AC00CC6563 /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
-		A32FB2B51D1BE1AC00CC6563 /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
-		A32FB2B61D1BE1AC00CC6563 /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
-		A32FB2B71D1BE1AC00CC6563 /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
-		A32FB2B81D1BE1AC00CC6563 /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
-		A32FB2B91D1BE1AC00CC6563 /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
-		A32FB2BA1D1BE1AC00CC6563 /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
 		A32FB2BC1D1BE1AC00CC6563 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		A32FB2BD1D1BE1AC00CC6563 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		A32FB2BF1D1BE1AC00CC6563 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -365,12 +338,6 @@
 		A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		A32FB2E01D1BE1F500CC6563 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		A32FB2E11D1BE1F500CC6563 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
-		A32FB2E41D1BE24800CC6563 /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = "<group>"; };
-		A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = "<group>"; };
-		A32FB2E71D1BE24800CC6563 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
-		A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_arrow@2x.png"; sourceTree = "<group>"; };
-		A32FB2E91D1BE24800CC6563 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
-		A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,12 +431,10 @@
 		A32FB18D1D1BE05D00CC6563 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				A32FB2E31D1BE24800CC6563 /* CKCalendarView */,
 				A32FB2841D1BE1AC00CC6563 /* RFSegmentView */,
 				A32FB2871D1BE1AC00CC6563 /* SDWebImage */,
 				A32FB2A91D1BE1AC00CC6563 /* SocketRocket */,
 				A32FB2AC1D1BE1AC00CC6563 /* STCollapseTableView */,
-				A32FB2AF1D1BE1AC00CC6563 /* STPopup */,
 				A32FB2BB1D1BE1AC00CC6563 /* Toast */,
 				A32FB2BE1D1BE1AC00CC6563 /* UICKeyChainStore */,
 				A32FB2C11D1BE1AC00CC6563 /* UIDevice-Hardware */,
@@ -477,7 +442,6 @@
 				A32FB1AA1D1BE19200CC6563 /* ALOCenteredButton */,
 				A32FB1AD1D1BE19200CC6563 /* EMString */,
 				A32FB1B61D1BE19200CC6563 /* FCUUID */,
-				A32FB1BB1D1BE19200CC6563 /* FDSlideBar */,
 				A32FB1C01D1BE19200CC6563 /* FrameAccessor */,
 				A32FB1C61D1BE19200CC6563 /* HTChineseHandle */,
 				A32FB1C91D1BE19200CC6563 /* IHKeyboardAvoiding */,
@@ -564,17 +528,6 @@
 				A32FB1BA1D1BE19200CC6563 /* UIDevice+FCUUID.m */,
 			);
 			path = FCUUID;
-			sourceTree = "<group>";
-		};
-		A32FB1BB1D1BE19200CC6563 /* FDSlideBar */ = {
-			isa = PBXGroup;
-			children = (
-				A32FB1BC1D1BE19200CC6563 /* FDSlideBar.h */,
-				A32FB1BD1D1BE19200CC6563 /* FDSlideBar.m */,
-				A32FB1BE1D1BE19200CC6563 /* FDSlideBarItem.h */,
-				A32FB1BF1D1BE19200CC6563 /* FDSlideBarItem.m */,
-			);
-			path = FDSlideBar;
 			sourceTree = "<group>";
 		};
 		A32FB1C01D1BE19200CC6563 /* FrameAccessor */ = {
@@ -880,24 +833,6 @@
 			path = STCollapseTableView;
 			sourceTree = "<group>";
 		};
-		A32FB2AF1D1BE1AC00CC6563 /* STPopup */ = {
-			isa = PBXGroup;
-			children = (
-				A32FB2B01D1BE1AC00CC6563 /* STPopup.h */,
-				A32FB2B11D1BE1AC00CC6563 /* STPopupController.h */,
-				A32FB2B21D1BE1AC00CC6563 /* STPopupController.m */,
-				A32FB2B31D1BE1AC00CC6563 /* STPopupLeftBarItem.h */,
-				A32FB2B41D1BE1AC00CC6563 /* STPopupLeftBarItem.m */,
-				A32FB2B51D1BE1AC00CC6563 /* STPopupNavigationBar.h */,
-				A32FB2B61D1BE1AC00CC6563 /* STPopupNavigationBar.m */,
-				A32FB2B71D1BE1AC00CC6563 /* UIResponder+STPopup.h */,
-				A32FB2B81D1BE1AC00CC6563 /* UIResponder+STPopup.m */,
-				A32FB2B91D1BE1AC00CC6563 /* UIViewController+STPopup.h */,
-				A32FB2BA1D1BE1AC00CC6563 /* UIViewController+STPopup.m */,
-			);
-			path = STPopup;
-			sourceTree = "<group>";
-		};
 		A32FB2BB1D1BE1AC00CC6563 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,28 +867,6 @@
 				A32FB2E11D1BE1F500CC6563 /* KxMenu.m */,
 			);
 			path = KxMenu;
-			sourceTree = "<group>";
-		};
-		A32FB2E31D1BE24800CC6563 /* CKCalendarView */ = {
-			isa = PBXGroup;
-			children = (
-				A32FB2E41D1BE24800CC6563 /* CKCalendarView.h */,
-				A32FB2E51D1BE24800CC6563 /* CKCalendarView.m */,
-				A32FB2E61D1BE24800CC6563 /* resources */,
-			);
-			name = CKCalendarView;
-			path = Source;
-			sourceTree = "<group>";
-		};
-		A32FB2E61D1BE24800CC6563 /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				A32FB2E71D1BE24800CC6563 /* left_arrow.png */,
-				A32FB2E81D1BE24800CC6563 /* left_arrow@2x.png */,
-				A32FB2E91D1BE24800CC6563 /* right_arrow.png */,
-				A32FB2EA1D1BE24800CC6563 /* right_arrow@2x.png */,
-			);
-			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1059,12 +972,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32FB2ED1D1BE24800CC6563 /* left_arrow@2x.png in Resources */,
-				A32FB2EC1D1BE24800CC6563 /* left_arrow.png in Resources */,
-				A32FB2EE1D1BE24800CC6563 /* right_arrow.png in Resources */,
 				A32F1B911D1BD8BA0041312D /* LaunchScreen.storyboard in Resources */,
 				A32F1B8E1D1BD8BA0041312D /* Assets.xcassets in Resources */,
-				A32FB2EF1D1BE24800CC6563 /* right_arrow@2x.png in Resources */,
 				A32F1B8C1D1BD8BA0041312D /* Main.storyboard in Resources */,
 				A32FB27F1D1BE19200CC6563 /* MJRefresh.bundle in Resources */,
 				A32FB25B1D1BE19200CC6563 /* KVNProgressView.xib in Resources */,
@@ -1107,7 +1016,6 @@
 				A32FB23E1D1BE19200CC6563 /* AFHTTPRequestOperation.m in Sources */,
 				A32F1B891D1BD8BA0041312D /* ViewController.m in Sources */,
 				A32FB2421D1BE19200CC6563 /* AFNetworkReachabilityManager.m in Sources */,
-				A32FB2D91D1BE1AC00CC6563 /* STPopupNavigationBar.m in Sources */,
 				A32FB2E21D1BE1F500CC6563 /* KxMenu.m in Sources */,
 				A32FB2C41D1BE1AC00CC6563 /* RFSegmentView.m in Sources */,
 				A32FB24C1D1BE19200CC6563 /* NSString+EMAdditions.m in Sources */,
@@ -1131,7 +1039,6 @@
 				A32FB26D1D1BE19200CC6563 /* NSObject+MJCoding.m in Sources */,
 				A32FB2CF1D1BE1AC00CC6563 /* UIImage+GIF.m in Sources */,
 				A32FB2D11D1BE1AC00CC6563 /* UIImage+WebP.m in Sources */,
-				A32FB2DA1D1BE1AC00CC6563 /* UIResponder+STPopup.m in Sources */,
 				A32FB2701D1BE19200CC6563 /* NSString+MJExtension.m in Sources */,
 				A32FB2551D1BE19200CC6563 /* JTImageButton.m in Sources */,
 				A32FB2611D1BE19200CC6563 /* MASViewConstraint.m in Sources */,
@@ -1142,7 +1049,6 @@
 				A32FB24D1D1BE19200CC6563 /* FCUUID.m in Sources */,
 				A32FB2561D1BE19200CC6563 /* UIColor+KVNContrast.m in Sources */,
 				A32FB24E1D1BE19200CC6563 /* UIDevice+FCUUID.m in Sources */,
-				A32FB2DB1D1BE1AC00CC6563 /* UIViewController+STPopup.m in Sources */,
 				A32FB2831D1BE19200CC6563 /* UIView+MJExtension.m in Sources */,
 				A32FB2721D1BE19200CC6563 /* MJRefreshBackFooter.m in Sources */,
 				A32FB25D1D1BE19200CC6563 /* MASConstraint.m in Sources */,
@@ -1152,8 +1058,6 @@
 				A32FB2D41D1BE1AC00CC6563 /* UIView+WebCacheOperation.m in Sources */,
 				A32FB2731D1BE19200CC6563 /* MJRefreshComponent.m in Sources */,
 				A32FB2D01D1BE1AC00CC6563 /* UIImage+MultiFormat.m in Sources */,
-				A32FB2EB1D1BE24800CC6563 /* CKCalendarView.m in Sources */,
-				A32FB2D71D1BE1AC00CC6563 /* STPopupController.m in Sources */,
 				A32FB2DC1D1BE1AC00CC6563 /* UIView+Toast.m in Sources */,
 				A32FB2CE1D1BE1AC00CC6563 /* UIButton+WebCache.m in Sources */,
 				A32FB27E1D1BE19200CC6563 /* MJRefreshStateHeader.m in Sources */,
@@ -1166,19 +1070,16 @@
 				A32FB23F1D1BE19200CC6563 /* AFHTTPRequestOperationManager.m in Sources */,
 				A32FB27D1D1BE19200CC6563 /* MJRefreshNormalHeader.m in Sources */,
 				A32FB2781D1BE19200CC6563 /* MJRefreshAutoStateFooter.m in Sources */,
-				A32FB2D81D1BE1AC00CC6563 /* STPopupLeftBarItem.m in Sources */,
 				A32FB2741D1BE19200CC6563 /* MJRefreshFooter.m in Sources */,
 				A32FB25C1D1BE19200CC6563 /* MASCompositeConstraint.m in Sources */,
 				A32F1B861D1BD8BA0041312D /* AppDelegate.m in Sources */,
 				A32FB2771D1BE19200CC6563 /* MJRefreshAutoNormalFooter.m in Sources */,
 				A32FB27A1D1BE19200CC6563 /* MJRefreshBackNormalFooter.m in Sources */,
 				A32FB25E1D1BE19200CC6563 /* MASConstraintMaker.m in Sources */,
-				A32FB24F1D1BE19200CC6563 /* FDSlideBar.m in Sources */,
 				A32F1B831D1BD8BA0041312D /* main.m in Sources */,
 				A32FB2DD1D1BE1AC00CC6563 /* UICKeyChainStore.m in Sources */,
 				A32FB2401D1BE19200CC6563 /* AFHTTPSessionManager.m in Sources */,
 				A32FB2C71D1BE1AC00CC6563 /* SDImageCache.m in Sources */,
-				A32FB2501D1BE19200CC6563 /* FDSlideBarItem.m in Sources */,
 				A32FB2D61D1BE1AC00CC6563 /* STCollapseTableView.m in Sources */,
 				A32FB27B1D1BE19200CC6563 /* MJRefreshBackStateFooter.m in Sources */,
 				A32FB24A1D1BE19200CC6563 /* EMStringStylingConfiguration.m in Sources */,
