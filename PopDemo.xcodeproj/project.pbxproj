@@ -10,7 +10,6 @@
 		A32F1B831D1BD8BA0041312D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F1B821D1BD8BA0041312D /* main.m */; };
 		A32F1B861D1BD8BA0041312D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F1B851D1BD8BA0041312D /* AppDelegate.m */; };
 		A32F1B891D1BD8BA0041312D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F1B881D1BD8BA0041312D /* ViewController.m */; };
-		A32F1B8C1D1BD8BA0041312D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32F1B8A1D1BD8BA0041312D /* Main.storyboard */; };
 		A32F1B8E1D1BD8BA0041312D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32F1B8D1D1BD8BA0041312D /* Assets.xcassets */; };
 		A32F1B911D1BD8BA0041312D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32F1B8F1D1BD8BA0041312D /* LaunchScreen.storyboard */; };
 		A32F1B9C1D1BD8BA0041312D /* PopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F1B9B1D1BD8BA0041312D /* PopDemoTests.m */; };
@@ -85,7 +84,7 @@
 		A32FB2811D1BE19200CC6563 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2381D1BE19200CC6563 /* UIScrollView+MJExtension.m */; };
 		A32FB2821D1BE19200CC6563 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB23A1D1BE19200CC6563 /* UIScrollView+MJRefresh.m */; };
 		A32FB2831D1BE19200CC6563 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB23C1D1BE19200CC6563 /* UIView+MJExtension.m */; };
-		A32FB2C41D1BE1AC00CC6563 /* RFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2861D1BE1AC00CC6563 /* RFSegmentView.m */; };
+		A32FB2C41D1BE1AC00CC6563 /* YLSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2861D1BE1AC00CC6563 /* YLSegmentView.m */; };
 		A32FB2C51D1BE1AC00CC6563 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2891D1BE1AC00CC6563 /* MKAnnotationView+WebCache.m */; };
 		A32FB2C61D1BE1AC00CC6563 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB28B1D1BE1AC00CC6563 /* NSData+ImageContentType.m */; };
 		A32FB2C71D1BE1AC00CC6563 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB28D1D1BE1AC00CC6563 /* SDImageCache.m */; };
@@ -107,6 +106,10 @@
 		A32FB2DD1D1BE1AC00CC6563 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C01D1BE1AC00CC6563 /* UICKeyChainStore.m */; };
 		A32FB2DE1D1BE1AC00CC6563 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */; };
 		A32FB2E21D1BE1F500CC6563 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB2E11D1BE1F500CC6563 /* KxMenu.m */; };
+		A3B44F701D23B60A00F0CB01 /* NSDictionary+MutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B44F631D23B60A00F0CB01 /* NSDictionary+MutableCopy.m */; };
+		A3B44F711D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B44F651D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.m */; };
+		A3B44F741D23B60A00F0CB01 /* StatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B44F6B1D23B60A00F0CB01 /* StatUtil.m */; };
+		A3B44F761D23B60A00F0CB01 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B44F6F1D23B60A00F0CB01 /* UIUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +136,6 @@
 		A32F1B851D1BD8BA0041312D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A32F1B871D1BD8BA0041312D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A32F1B881D1BD8BA0041312D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A32F1B8B1D1BD8BA0041312D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A32F1B8D1D1BD8BA0041312D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32F1B901D1BD8BA0041312D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32F1B921D1BD8BA0041312D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,8 +292,8 @@
 		A32FB23A1D1BE19200CC6563 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		A32FB23B1D1BE19200CC6563 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		A32FB23C1D1BE19200CC6563 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		A32FB2851D1BE1AC00CC6563 /* RFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegmentView.h; sourceTree = "<group>"; };
-		A32FB2861D1BE1AC00CC6563 /* RFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegmentView.m; sourceTree = "<group>"; };
+		A32FB2851D1BE1AC00CC6563 /* YLSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSegmentView.h; sourceTree = "<group>"; };
+		A32FB2861D1BE1AC00CC6563 /* YLSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSegmentView.m; sourceTree = "<group>"; };
 		A32FB2881D1BE1AC00CC6563 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		A32FB2891D1BE1AC00CC6563 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		A32FB28A1D1BE1AC00CC6563 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -335,6 +337,14 @@
 		A32FB2C31D1BE1AC00CC6563 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		A32FB2E01D1BE1F500CC6563 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		A32FB2E11D1BE1F500CC6563 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		A3B44F621D23B60A00F0CB01 /* NSDictionary+MutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MutableCopy.h"; sourceTree = "<group>"; };
+		A3B44F631D23B60A00F0CB01 /* NSDictionary+MutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MutableCopy.m"; sourceTree = "<group>"; };
+		A3B44F641D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		A3B44F651D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		A3B44F6A1D23B60A00F0CB01 /* StatUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatUtil.h; sourceTree = "<group>"; };
+		A3B44F6B1D23B60A00F0CB01 /* StatUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatUtil.m; sourceTree = "<group>"; };
+		A3B44F6E1D23B60A00F0CB01 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
+		A3B44F6F1D23B60A00F0CB01 /* UIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,7 +400,6 @@
 				A32F1B851D1BD8BA0041312D /* AppDelegate.m */,
 				A32F1B871D1BD8BA0041312D /* ViewController.h */,
 				A32F1B881D1BD8BA0041312D /* ViewController.m */,
-				A32F1B8A1D1BD8BA0041312D /* Main.storyboard */,
 				A32F1B8D1D1BD8BA0041312D /* Assets.xcassets */,
 				A32F1B8F1D1BD8BA0041312D /* LaunchScreen.storyboard */,
 				A32F1B921D1BD8BA0041312D /* Info.plist */,
@@ -428,6 +437,7 @@
 		A32FB18D1D1BE05D00CC6563 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A3B44F611D23B60300F0CB01 /* Util */,
 				A32FB2841D1BE1AC00CC6563 /* RFSegmentView */,
 				A32FB2871D1BE1AC00CC6563 /* SDWebImage */,
 				A32FB2AC1D1BE1AC00CC6563 /* STCollapseTableView */,
@@ -765,8 +775,8 @@
 		A32FB2841D1BE1AC00CC6563 /* RFSegmentView */ = {
 			isa = PBXGroup;
 			children = (
-				A32FB2851D1BE1AC00CC6563 /* RFSegmentView.h */,
-				A32FB2861D1BE1AC00CC6563 /* RFSegmentView.m */,
+				A32FB2851D1BE1AC00CC6563 /* YLSegmentView.h */,
+				A32FB2861D1BE1AC00CC6563 /* YLSegmentView.m */,
 			);
 			path = RFSegmentView;
 			sourceTree = "<group>";
@@ -854,6 +864,21 @@
 				A32FB2E11D1BE1F500CC6563 /* KxMenu.m */,
 			);
 			path = KxMenu;
+			sourceTree = "<group>";
+		};
+		A3B44F611D23B60300F0CB01 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A3B44F621D23B60A00F0CB01 /* NSDictionary+MutableCopy.h */,
+				A3B44F631D23B60A00F0CB01 /* NSDictionary+MutableCopy.m */,
+				A3B44F641D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.h */,
+				A3B44F651D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.m */,
+				A3B44F6A1D23B60A00F0CB01 /* StatUtil.h */,
+				A3B44F6B1D23B60A00F0CB01 /* StatUtil.m */,
+				A3B44F6E1D23B60A00F0CB01 /* UIUtil.h */,
+				A3B44F6F1D23B60A00F0CB01 /* UIUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -961,7 +986,6 @@
 			files = (
 				A32F1B911D1BD8BA0041312D /* LaunchScreen.storyboard in Resources */,
 				A32F1B8E1D1BD8BA0041312D /* Assets.xcassets in Resources */,
-				A32F1B8C1D1BD8BA0041312D /* Main.storyboard in Resources */,
 				A32FB27F1D1BE19200CC6563 /* MJRefresh.bundle in Resources */,
 				A32FB25B1D1BE19200CC6563 /* KVNProgressView.xib in Resources */,
 			);
@@ -1003,7 +1027,7 @@
 				A32F1B891D1BD8BA0041312D /* ViewController.m in Sources */,
 				A32FB2421D1BE19200CC6563 /* AFNetworkReachabilityManager.m in Sources */,
 				A32FB2E21D1BE1F500CC6563 /* KxMenu.m in Sources */,
-				A32FB2C41D1BE1AC00CC6563 /* RFSegmentView.m in Sources */,
+				A32FB2C41D1BE1AC00CC6563 /* YLSegmentView.m in Sources */,
 				A32FB24C1D1BE19200CC6563 /* NSString+EMAdditions.m in Sources */,
 				A32FB2661D1BE19200CC6563 /* MJDictionaryCache.m in Sources */,
 				A32FB2CB1D1BE1AC00CC6563 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1019,6 +1043,7 @@
 				A32FB2C51D1BE1AC00CC6563 /* MKAnnotationView+WebCache.m in Sources */,
 				A32FB2CA1D1BE1AC00CC6563 /* SDWebImageDownloader.m in Sources */,
 				A32FB2641D1BE19200CC6563 /* View+MASAdditions.m in Sources */,
+				A3B44F711D23B60A00F0CB01 /* NSMutableArray+QueueAdditions.m in Sources */,
 				A32FB2491D1BE19200CC6563 /* EMMarkupProperty.m in Sources */,
 				A32FB2801D1BE19200CC6563 /* MJRefreshConst.m in Sources */,
 				A32FB2711D1BE19200CC6563 /* MJRefreshAutoFooter.m in Sources */,
@@ -1033,12 +1058,14 @@
 				A32FB25A1D1BE19200CC6563 /* KVNProgressConfiguration.m in Sources */,
 				A32FB2531D1BE19200CC6563 /* pinyin.m in Sources */,
 				A32FB24D1D1BE19200CC6563 /* FCUUID.m in Sources */,
+				A3B44F741D23B60A00F0CB01 /* StatUtil.m in Sources */,
 				A32FB2561D1BE19200CC6563 /* UIColor+KVNContrast.m in Sources */,
 				A32FB24E1D1BE19200CC6563 /* UIDevice+FCUUID.m in Sources */,
 				A32FB2831D1BE19200CC6563 /* UIView+MJExtension.m in Sources */,
 				A32FB2721D1BE19200CC6563 /* MJRefreshBackFooter.m in Sources */,
 				A32FB25D1D1BE19200CC6563 /* MASConstraint.m in Sources */,
 				A32FB2581D1BE19200CC6563 /* UIImage+KVNImageEffects.m in Sources */,
+				A3B44F761D23B60A00F0CB01 /* UIUtil.m in Sources */,
 				A32FB2C81D1BE1AC00CC6563 /* SDWebImageCompat.m in Sources */,
 				A32FB2D21D1BE1AC00CC6563 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A32FB2D41D1BE1AC00CC6563 /* UIView+WebCacheOperation.m in Sources */,
@@ -1052,6 +1079,7 @@
 				A32FB2511D1BE19200CC6563 /* ScrollViewFrameAccessor.m in Sources */,
 				A32FB2451D1BE19200CC6563 /* AFURLRequestSerialization.m in Sources */,
 				A32FB2DE1D1BE1AC00CC6563 /* UIDevice-Hardware.m in Sources */,
+				A3B44F701D23B60A00F0CB01 /* NSDictionary+MutableCopy.m in Sources */,
 				A32FB25F1D1BE19200CC6563 /* MASLayoutConstraint.m in Sources */,
 				A32FB23F1D1BE19200CC6563 /* AFHTTPRequestOperationManager.m in Sources */,
 				A32FB27D1D1BE19200CC6563 /* MJRefreshNormalHeader.m in Sources */,
@@ -1116,14 +1144,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A32F1B8A1D1BD8BA0041312D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A32F1B8B1D1BD8BA0041312D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A32F1B8F1D1BD8BA0041312D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
