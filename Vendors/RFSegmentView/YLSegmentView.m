@@ -26,10 +26,14 @@
 #pragma mark - YLSegmentItem
 @interface YLSegmentItem : UIView
 
-@property (nonatomic, strong) UIColor   *norColor;
-@property (nonatomic, strong) UIColor   *selColor;
+@property (nonatomic, strong) UIColor   *norBorderColor;
+@property (nonatomic, strong) UIColor   *norBackColor;
 @property (nonatomic, strong) UIColor   *norTextColor;
+
+@property (nonatomic, strong) UIColor   *selBorderColor;
+@property (nonatomic, strong) UIColor   *selBackColor;
 @property (nonatomic, strong) UIColor   *selTextColor;
+
 @property (nonatomic, strong) UILabel   *titleLabel;
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, assign) BOOL      isSelected;
@@ -40,26 +44,41 @@
 - (id)initWithFrame:(CGRect)frame
               index:(NSInteger)index
               title:(NSString *)title
-           norColor:(UIColor *)norColor
-           selColor:(UIColor *)selColor
+             colors:(NSDictionary *) colors
          isSelected:(BOOL)isSelected;
 {
     self = [super initWithFrame:frame];
     if (self) {
+        if(colors) {
+            _norBorderColor = [colors objectForKey:@"norBorderColor"];
+            _norBackColor = [colors objectForKey:@"norBackColor"];
+            _norTextColor = [colors objectForKey:@"norTextColor"];
+            _selBorderColor = [colors objectForKey:@"selBorderColor"];
+            _selBackColor = [colors objectForKey:@"selBackColor"];
+            _selTextColor = [colors objectForKey:@"selTextColor"];
+        } else {
+            UIColor *norTextColor = [UIUtil ColorWithHexString:@"abb7c6"];
+            UIColor *selTextColor = [UIUtil ColorWithHexString:@"b4784c"];
+            UIColor *backColor = [UIUtil ColorWithHexString:@"eaeff5"];
+            
+            _norBorderColor = norTextColor;
+            _norBackColor = backColor;
+            _norTextColor = norTextColor;
+            _selBorderColor = selTextColor;
+            _selBackColor = backColor;
+            _selTextColor = selTextColor;
+        }
         
-        _titleLabel                 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        _titleLabel                 = [[UILabel alloc] initWithFrame:CGRectMake(0 + kBorderLineWidth, 0 + kBorderLineWidth, self.bounds.size.width - kBorderLineWidth * 2, self.bounds.size.height - kBorderLineWidth * 2)];
         _titleLabel.textAlignment   = NSTextAlignmentCenter;
-        _titleLabel.backgroundColor = [UIColor clearColor];
+        _titleLabel.backgroundColor = _norBackColor;
         _titleLabel.font            = kTitleSize;
         [self addSubview:_titleLabel];
         
-        _norColor        = norColor;
-        _selColor        = selColor;
         _titleLabel.text = title;
         _index           = index;
         _isSelected      = isSelected;
-        self.layer.borderWidth = kBorderLineWidth;
-        self.layer.borderColor = [UIUtil ColorWithHexString:@"abb7c6"].CGColor;
+        self.backgroundColor = _norBorderColor;
     }
     return self;
 }
@@ -67,24 +86,21 @@
 - (void)setFrame:(CGRect)frame{
     [super setFrame:frame];
     
-    self.titleLabel.frame = self.bounds;
+    self.titleLabel.frame = CGRectMake(0 + kBorderLineWidth, 0 + kBorderLineWidth, self.bounds.size.width - kBorderLineWidth * 2, self.bounds.size.height - kBorderLineWidth * 2);
 }
 
 - (void)setSelColor:(UIColor *)selColor
 {
-    if (_selColor != selColor) {
-        _selColor = selColor;
-        
-        if (_isSelected) {
-            self.titleLabel.textColor = self.selTextColor;
-            self.backgroundColor      = self.selColor;
-            self.layer.borderColor = [UIUtil ColorWithHexString:@"b4784c"].CGColor;
-        } else {
-            self.titleLabel.textColor = self.norTextColor;
-            self.backgroundColor      = self.norColor;
-            self.layer.borderColor = [UIUtil ColorWithHexString:@"abb7c6"].CGColor;
-        }
+    if (_isSelected) {
+        self.titleLabel.textColor = self.selTextColor;
+        self.titleLabel.backgroundColor = self.selBackColor;
+        self.backgroundColor = self.selBorderColor;
+    } else {
+        self.titleLabel.textColor = self.norTextColor;
+        self.titleLabel.backgroundColor = self.norBackColor;
+        self.backgroundColor = self.norBorderColor;
     }
+    
 }
 
 - (void)setIsSelected:(BOOL)isSelected
@@ -93,13 +109,13 @@
     
     if (_isSelected) {
         self.titleLabel.textColor = self.selTextColor;
-        self.backgroundColor      = self.selColor;
-        self.layer.borderColor = [UIUtil ColorWithHexString:@"b4784c"].CGColor;
+        self.titleLabel.backgroundColor = self.selBackColor;
+        self.backgroundColor = self.selBorderColor;
         [self.superview bringSubviewToFront:self];
     } else {
         self.titleLabel.textColor = self.norTextColor;
-        self.backgroundColor      = self.norColor;
-        self.layer.borderColor = [UIUtil ColorWithHexString:@"abb7c6"].CGColor;
+        self.titleLabel.backgroundColor = self.norBackColor;
+        self.backgroundColor = self.norBorderColor;
     }
 }
 
@@ -122,20 +138,15 @@
 @property (nonatomic, strong) UIView         *bgView;
 @property (nonatomic, strong) NSArray        *titles;
 @property (nonatomic, strong) NSMutableArray *items;
-//@property (nonatomic, strong) NSMutableArray *lines;
 @end
 
 @implementation YLSegmentView
 
 - (instancetype)initWithFrame:(CGRect)frame
                         items:(NSArray<NSString *> * _Nonnull)items
-                     norColor:(UIColor *)norColor
-                     selColor:(UIColor *)selColor
-{
+                       colors:(NSDictionary *)colors {
     self = [super initWithFrame:frame];
     if (self) {
-        self.norColor = norColor;
-        self.selColor = selColor;
         if (items.count >= 2) {
             NSAssert(items.count >= 2, @"items's cout at least 2!please check!");
             _titles              = items;
@@ -146,10 +157,6 @@
             //
             _bgView = [[UIView alloc] init];
             _bgView.backgroundColor    = [UIColor clearColor];
-            //            _bgView.clipsToBounds      = YES;
-            //            _bgView.layer.cornerRadius = KDefaultCornerRadius;
-            //            _bgView.layer.borderWidth  = 0;
-            //            _bgView.layer.borderColor = [UIUtil ColorWithHexString:@"abb7c6"].CGColor;
             
             [self addSubview:_bgView];
             
@@ -160,10 +167,8 @@
                 YLSegmentItem *item = [[YLSegmentItem alloc] initWithFrame:CGRectZero
                                                                      index:i
                                                                      title:items[i]
-                                                                  norColor:self.norColor ? self.norColor : [UIColor whiteColor]
-                                                                  selColor:self.selColor ? self.selColor : kDefaultTintColor
-                                                                isSelected:(i == 0)? YES: NO];
-                
+                                                                    colors:colors
+                                                                isSelected:(i == 0)];
                 [_bgView addSubview:item];
                 item.delegate = self;
                 
@@ -173,20 +178,6 @@
                 }
                 [_items addObject:item];
             }
-            
-            //            //add Ver lines
-            //            for (NSInteger i = 0; i < count - 1; i++) {
-            //                UIView *lineView = [[UIView alloc] initWithFrame:CGRectZero];
-            //                lineView.backgroundColor = kDefaultTintColor;
-            //
-            //                [_bgView addSubview:lineView];
-            //
-            //                //save all lines
-            //                if (!self.lines) {
-            //                    self.lines = [[NSMutableArray alloc] initWithCapacity:count];
-            //                }
-            //                [_lines addObject:lineView];
-            //            }
         } else {
             _titles              = items;
             _selectedIndex       = 0;
@@ -195,10 +186,6 @@
             //
             _bgView = [[UIView alloc] init];
             _bgView.backgroundColor    = [UIColor clearColor];
-            //            _bgView.clipsToBounds      = YES;
-            //            _bgView.layer.cornerRadius = KDefaultCornerRadius;
-            //            _bgView.layer.borderWidth  = kBorderLineWidth;
-            //            _bgView.layer.borderColor  = kDefaultTintColor.CGColor;
             
             [self addSubview:_bgView];
             
@@ -208,11 +195,8 @@
                 YLSegmentItem *item = [[YLSegmentItem alloc] initWithFrame:CGRectZero
                                                                      index:i
                                                                      title:items[i]
-                                                                  norColor:self.norColor ? self.norColor : [UIColor whiteColor]
-                                                                  selColor:self.selColor ? self.selColor : kDefaultTintColor
+                                                                    colors:colors
                                                                 isSelected:(i == 0)? YES: NO];
-                item.layer.masksToBounds = YES;
-                item.layer.cornerRadius = KDefaultCornerRadius;
                 [_bgView addSubview:item];
                 item.delegate = self;
                 
@@ -248,15 +232,28 @@
         
         item.frame = CGRectMake(initX - idx * kBorderLineWidth, initY, itemWidth, viewHeight);
         initX += itemWidth;
-        //        if (idx == 0) {
-        //            UIBezierPath * bezierPath = [UIBezierPath bezierPathWithRoundedRect:item.bounds
-        //                                                              byRoundingCorners:UIRectCornerTopLeft|UIRectCornerBottomLeft
-        //                                                                    cornerRadii:CGSizeMake(KDefaultCornerRadius, KDefaultCornerRadius)];
-        //            CAShapeLayer *maskLayer = [CAShapeLayer layer];
-        //            maskLayer.frame = item.bounds;
-        //            maskLayer.path = bezierPath.CGPath;
-        //            item.layer.mask = maskLayer;
-        //        }
+        if (count > 1 && (idx == 0 || idx == count - 1)) {
+            UIBezierPath * bezierPath = [UIBezierPath bezierPathWithRoundedRect:item.bounds
+                                                              byRoundingCorners:idx == 0 ? (UIRectCornerTopLeft|UIRectCornerBottomLeft) : (UIRectCornerTopRight|UIRectCornerBottomRight)
+                                                                    cornerRadii:CGSizeMake(KDefaultCornerRadius, KDefaultCornerRadius)];
+            CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+            maskLayer.frame = item.bounds;
+            maskLayer.path = bezierPath.CGPath;
+            item.layer.mask = maskLayer;
+            
+            bezierPath = [UIBezierPath bezierPathWithRoundedRect:item.titleLabel.bounds
+                                               byRoundingCorners:idx == 0 ? (UIRectCornerTopLeft|UIRectCornerBottomLeft) : (UIRectCornerTopRight|UIRectCornerBottomRight)
+                                                     cornerRadii:CGSizeMake(KDefaultCornerRadius - 0.8, KDefaultCornerRadius - 0.8)];
+            maskLayer = [[CAShapeLayer alloc] init];
+            maskLayer.frame = item.bounds;
+            maskLayer.path = bezierPath.CGPath;
+            item.titleLabel.layer.mask = maskLayer;
+        } else if (count == 1) {
+            item.titleLabel.layer.masksToBounds = YES;
+            item.titleLabel.layer.cornerRadius = KDefaultCornerRadius - 0.8;
+            item.layer.masksToBounds = YES;
+            item.layer.cornerRadius = KDefaultCornerRadius;
+        }
     }];
 }
 
@@ -266,41 +263,6 @@
     
     _cornerRadius = cornerRadius;
     _bgView.layer.cornerRadius  = cornerRadius;
-    
-    [self setNeedsLayout];
-}
-
-- (void)setTintColor:(UIColor *)tintColor{
-    
-    if (_tintColor != tintColor) {
-        _tintColor = tintColor;
-        
-        for (NSInteger i = 0; i<self.items.count; i++) {
-            YLSegmentItem *item = self.items[i];
-            item.selColor = tintColor;
-        }
-    }
-}
-
-- (void)setTextColor:(UIColor *)textColor{
-    
-    if (_textColor != textColor) {
-        _textColor = textColor;
-        for (NSInteger i = 0; i<self.items.count; i++) {
-            YLSegmentItem *item = self.items[i];
-            item.norTextColor = _textColor;
-            item.selTextColor = self.selTextColor;
-        }
-        [self setNeedsLayout];
-    }
-}
-
-- (void)setBorderColor:(UIColor *)borderColor{
-    //    self.bgView.layer.borderColor  = borderColor.CGColor;
-    //    for (NSInteger i = 0; i<self.lines.count; i++) {
-    //        UIView *lineView = self.lines[i];
-    //        lineView.backgroundColor = borderColor;
-    //    }
     
     [self setNeedsLayout];
 }

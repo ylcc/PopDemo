@@ -60,13 +60,6 @@ typedef void (^selectedHandler)(YLSegmentView * __nullable view, NSInteger selec
 /// @name Configuring the Text Attributes
 ///=============================================================================
 
-@property (nonatomic, strong) UIColor   *norColor;
-@property (nonatomic, strong) UIColor   *selColor;
-@property (nonatomic, strong) UIColor   *selTextColor;
-
-@property (nonatomic, strong) UIColor *tintColor; ///< set style color, default blue color.
-@property (nonatomic, strong) UIColor *borderColor; ///< set style color, default blue color.
-@property (nonatomic, strong) UIColor *textColor; ///< set style color, default blue color.
 @property (nonatomic, assign) CGFloat leftRightMargin; ///< set YLSegmentView left and right margin, default 15.f.
 @property (nonatomic, assign) CGFloat itemHeight; ///< set YLSegmentView item height, default 30.f.
 @property (nonatomic, assign) CGFloat cornerRadius; ///< set YLSegmentView's cornerRadius, default 3.f.
@@ -87,8 +80,7 @@ typedef void (^selectedHandler)(YLSegmentView * __nullable view, NSInteger selec
  */
 - (instancetype)initWithFrame:(CGRect)frame
                         items:(NSArray<NSString *> * _Nonnull)items
-                     norColor:(UIColor *)norColor
-                     selColor:(UIColor *)selColor;
+                       colors:( NSDictionary * _Nullable)colors;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
